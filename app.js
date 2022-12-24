@@ -18,15 +18,22 @@ function pageTransitions() {
             secBtns.forEach((btn) => {
                 btn.classList.remove('active');
             })
+        
+            e.target.classList.add('active');
+            sections.forEach((s) => {
+                s.classList.remove('active');
+            })
+
+            const element = document.getElementById(id);
+            element.classList.add('active');
         }
-        e.target.classList.add('active');
-        sections.forEach((section) => {
-            section.classList.remove('active');
-        })
+    })
 
-        const element = document.getElementById(id);
-        element.classList.add('active');
-
+    // toggle theme
+    const themeBtn = document.querySelector('.btn-theme');
+    themeBtn.addEventListener('click',() => {
+        let bodyElem = document.body;
+        bodyElem.classList.toggle('dark-mode');
     })
 }
 
