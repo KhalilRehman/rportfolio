@@ -19,6 +19,7 @@
 }*/
 :root {
     --color-primary:  #ffffff;
+    // --color-secondary: #fe220c; log apple's color
     --color-secondary: #ed4f4f;
     --color-white: #1d1d1d;
     --color-black: #000000;
@@ -165,7 +166,7 @@ section{
 }
 
 .btn-theme{
-    top: 5%;
+    top: 20%;
     right: 3%;
     width: 70px;
     height: 70px;
@@ -176,7 +177,7 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 3px 15px rgba(0, 0, 0, .3);
+    box-shadow: var(--box-shadow-1);
     transition: all .1s ease-in-out;
     &:active{
         transform: translateY(-4px);
@@ -185,23 +186,17 @@ section{
         font-size: 1.4rem;
         color: var(--color-gray1);
     }
+}
 
-    /*padding: 1rem;
-    cursor: pointer;
-    background-color: var(--color-gray3);
-    width: 55px;
-    height: 55px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: .7rem 0;
-    box-shadow: 0 3px 15px rgba(0, 0, 0, .5);
-    i{
-        font-size: 1.2rem;
-        color: var(--color-gray1);
-        pointer-events: none;
-    }*/
+.logo{
+    top: 5%;
+    position: fixed;
+    right: 15%;
+    z-index: 10;
+    img{
+        width: 150px;
+        border-radius: 50%;
+    }
 }
 
 .header-content{

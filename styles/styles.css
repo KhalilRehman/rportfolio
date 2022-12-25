@@ -174,7 +174,7 @@ section {
 }
 
 .btn-theme {
-  top: 5%;
+  top: 20%;
   right: 3%;
   width: 70px;
   height: 70px;
@@ -185,24 +185,8 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: var(--box-shadow-1);
   transition: all 0.1s ease-in-out;
-  /*padding: 1rem;
-  cursor: pointer;
-  background-color: var(--color-gray3);
-  width: 55px;
-  height: 55px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: .7rem 0;
-  box-shadow: 0 3px 15px rgba(0, 0, 0, .5);
-  i{
-      font-size: 1.2rem;
-      color: var(--color-gray1);
-      pointer-events: none;
-  }*/
 }
 .btn-theme:active {
   transform: translateY(-4px);
@@ -210,6 +194,17 @@ section {
 .btn-theme i {
   font-size: 1.4rem;
   color: var(--color-gray1);
+}
+
+.logo {
+  top: 5%;
+  position: fixed;
+  right: 15%;
+  z-index: 10;
+}
+.logo img {
+  width: 150px;
+  border-radius: 50%;
 }
 
 .header-content {
